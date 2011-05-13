@@ -1,0 +1,12 @@
+h1= title
+p there are: #{results.response.numFound} documents found
+
+p #{results.response.docs[0].name}
+
+
+div.results
+  - each article in results.response.docs
+    div#article
+      div#article_title
+        a(href='/article/'+article.id) #{article.name}
+      = article.manu

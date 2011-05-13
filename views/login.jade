@@ -1,0 +1,14 @@
+h1= title
+form(method="post")
+  fieldset
+    legend General
+    p
+      label(for="user[name]") Username:
+        input(type="text", name="user[name]", value='')
+    p
+      label(for="user[email]") Password:
+        input(type="password", name="password")
+        .tip
+          | Note: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  p.buttons
+    input(type="submit", value="Login Now")
